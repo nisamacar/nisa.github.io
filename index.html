@@ -14,8 +14,20 @@
 html {
     background-color: aqua;
     color: blueviolet;
-    background-image: url(https://www.osevio.com/blog/wp-content/uploads/2018/10/osevio-blog-kedi-one-cikarilmis-gorsel.jpg);
+   /* background-image: url(https://www.osevio.com/blog/wp-content/uploads/2018/10/osevio-blog-kedi-one-cikarilmis-gorsel.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: center center; */
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    transition-duration: 100ms;
 }
 </style>
+
+<script>
+setInterval(function () {
+    document.body.style.backgroundColor = '#' + Math.random().toString(16).slice(2, -6)
+}, 4)
+</script>
